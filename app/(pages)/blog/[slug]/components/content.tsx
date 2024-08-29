@@ -22,7 +22,7 @@ const Content = () => {
     return (
         <section>
             <Container>
-                <div className='grid grid-cols-1 grid-cols-3 relative'>
+                <div className='grid grid-cols-1 md:grid-cols-3 relative'>
 
                     <div className={clsx('col-span-3 lg:col-span-2  lg:border-l border-l-slate-300 h-full text-slate-600 lg:px-20 flex flex-col gap-16', 'dark:border-l-slate-600 dark:text-slate-400')}>
                         <div className={clsx('flex flex-col gap-4 text-md  font-thin', 'lg:text-lg')}>
@@ -45,17 +45,17 @@ const Content = () => {
                             <div className='relative'>
                                 <div title='copy' className='absolute bottom-10 right-10 rounded-xl p-2 bg-white hover:bg-slate-100 group cursor-pointer'>
                                     <Copy size={22} className='hover-group:text-slate-800' onClick={() => {
-                                        navigator.clipboard.writeText("<button className='inline - flex h - 10 items - center justify - center gap - 1.5 rounded - md border border - transparent bg - purple - 600 px - 4 text - center text - sm font - bold text - white transition duration - 150 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-500 md:rounded-xl'> Button Text </button>");
+                                        navigator.clipboard.writeText("<button className='inline-flex h - 10 items - center justify - center gap - 1.5 rounded - md border border-transparent bg - purple - 600 px - 4 text - center text - sm font - bold text - white transition duration - 150 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-500 md:rounded-xl'> Button Text </button>");
                                         toast("copied!");
                                     }} />
                                 </div>
                                 <pre className='w-xs h-40 bg-slate-100 text-white rounded-md p-6 overflow-auto'>
                                     <code className="text-slate-800">
 
-                                        <span className='text-primary-600'>import</span>  clsx from <strong className='text-green-800'>'clsx'</strong> ; <br />
-                                        <span className='text-primary-600'>const</span>  baseClasses = <span className='text-primary-800'>'bg-blue-500 text-white'</span> ;<br />
+                                        <span className='text-primary-600'>import</span>  clsx from <strong className='text-green-800'>{'clsx'}</strong> ; <br />
+                                        <span className='text-primary-600'>const</span>  baseClasses = <span className='text-primary-800'>{'bg-blue-500 text-white'}</span> ;<br />
 
-                                        <span className='text-primary-600'>const</span>  additionalClasses = <span className='text-primary-800'>'rounded-lg p-4'</span>  ;<br />
+                                        <span className='text-primary-600'>const</span>  additionalClasses = <span className='text-primary-800'>{'rounded-lg p-4'}</span>  ;<br />
 
                                         <span className='text-primary-600'>const</span>  combinedClasses = <strong className='text-green-800'>clsx</strong>(baseClasses, additionalClasses);
 
@@ -87,7 +87,7 @@ const Content = () => {
                                     <code className="text-slate-800">
 
                                         &lt;ul
-                                        className='<strong className='text-primary-800'>[&&gt;li:nth-child(2)]</strong>:text-red-800 <br /><strong className='text-primary-800'>[&&gt;li:nth-child(3)]</strong>:text-green-600'&gt; <br />
+                                        {'className='}<strong className='text-primary-800'>[&&gt;li:nth-child(2)]</strong>:text-red-800 <br /><strong className='text-primary-800'>[&&gt;li:nth-child(3)]</strong>{':text-green-600'}&gt; <br />
 
                                         <br />&nbsp;&lt;li&gt;First Item&lt;/li&gt;<br />
                                         &nbsp;&lt;li&gt; <span className='text-red-800'>Second Item Item</span> &lt;/li&gt;<br />
@@ -106,7 +106,7 @@ const Content = () => {
 
                     </div>
 
-                    <div className={clsx('hidden ms-auto lg:flex h-fit gap-8', isScrolled && 'absolute sticky top-0 backdrop-blur shadow-sm dark:shadow-slate-500 ')}>
+                    <div className={clsx('hidden ms-auto lg:flex h-fit gap-8', isScrolled && ' sticky top-0 backdrop-blur shadow-sm dark:shadow-slate-500 ')}>
                         <TableOfContents items={items} />
                     </div>
 
