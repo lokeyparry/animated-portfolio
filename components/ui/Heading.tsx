@@ -1,10 +1,11 @@
 import clsx from 'clsx';
 
-import { HashtagIcon } from '@/components/Icons';
+// import { HashtagIcon } from '@/components/icons';
 
 import { getSlug } from '@/helpers/mdx';
 
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { HashtagIcon } from './icons';
 
 type Props = DetailedHTMLProps<
   HTMLAttributes<HTMLHeadingElement>,

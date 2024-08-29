@@ -20,7 +20,7 @@ const HeroImage = () => {
         >
           <div
             className={clsx(
-              'bg-gradient-to-b from-slate-100 via-slate-100 absolute top-0 right-0 h-[590px] w-[375px] rounded-full bg-gradient-to-t',
+              'bg:gradient-to-b from-slate-100 via-slate-100 absolute top-0 right-0 h-[590px] w-[375px] rounded-full bg-gradient-to-t',
               'dark:from-accent-600/10 dark:via-accent-600/0 '
             )}
           >

@@ -9,7 +9,7 @@ import type { LinkProps } from 'next/link';
 
 type QuickViewProps = LinkProps & PropsWithChildren;
 
-export function QuickView({ href, children }: QuickViewProps) {
+export function link({ href, children }: QuickViewProps) {
   const handleQuickView = () => {
     const title = 'Quick Preview';
     const width = 480;
@@ -23,7 +23,7 @@ export function QuickView({ href, children }: QuickViewProps) {
       `width=${width},height=${height},left=${left},top=${top}`
     );
 
-    newWindow.focus();
+    newWindow?.focus();
   };
 
   return (

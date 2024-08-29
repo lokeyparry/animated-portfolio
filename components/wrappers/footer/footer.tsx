@@ -39,7 +39,7 @@ function FooterLink({
 }: FooterLinkProps) {
     if (label === 'soon') {
         return (
-            <span className={clsx('flex h-8 items-center gap-2 whitespace-nowrap px-2 py-1 text-sm text-slate-900 dark:text-slate-200 cursor-not-allowed text-slate-600', ' dark:text-slate-400')}>
+            <span className={clsx('flex h-8 items-center gap-2 whitespace-nowrap px-2 py-1 text-sm  dark:text-slate-200 cursor-not-allowed text-slate-600', ' dark:text-slate-400')}>
                 {title}
                 <span className={clsx('border-divider-light rounded-full border px-2 py-0 text-[10px] uppercase text-slate-900 dark:text-slate-200')}>{label}</span>
             </span>

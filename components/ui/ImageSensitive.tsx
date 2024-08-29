@@ -1,12 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import clsx from 'clsx';
+import { ImageProps } from 'next/image';
 import { useState } from 'react';
+import { EyeSlash } from './icons';
+import Image from './image';
 
-import { EyeSlash } from '@/components/Icons';
-import Image from '@/components/mdx/Image';
+// import { EyeSlash } from '@/components/Icons';
+// import Image from '@/components/mdx/Image';
 
-import type { ImageProps } from '@/components/mdx/Image';
+// import type { ImageProps } from '@/components/mdx/Image';
 
 type ImageSensitiveProps = ImageProps & {
   message?: string;

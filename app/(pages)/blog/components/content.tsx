@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import PostPreview from './post-preview';
 import type { TPostFrontMatter } from '@/types';
-import { slugsBlog } from '@/constants';
+// import { slugsBlog } from '@/constants';
 
 // for api 
 // import useContentMeta from '@/hooks/useContentMeta';

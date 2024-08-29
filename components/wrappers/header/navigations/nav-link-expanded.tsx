@@ -4,6 +4,8 @@ import React from 'react';
 import { NavLink } from './nav-link';
 
 
+
+import { NavLinkProps } from './nav-link'; // Assuming NavLinkProps is defined in this file or imported from another file//+
 interface NavLinkExpandedProps {
   title: string;
   items: Array<NavLinkProps>;

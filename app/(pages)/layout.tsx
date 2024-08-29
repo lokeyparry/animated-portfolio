@@ -1,5 +1,4 @@
-import Footer from "@/components/wrappers/footer/footer"
-import HeaderOne from "@/components/wrappers/header/header-one"
+
 import { Metadata } from "next"
 
 //Global seo 

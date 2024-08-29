@@ -170,7 +170,9 @@ function Activity({ onItemClick = () => { } }: ActivityProps) {
               <span>{activity.activityType}</span>
               <span>{relativeTime(activity.createdAt)}</span>
             </div>
-            <ActivityItem data={activity} />
+
+<ActivityItem data={{ ...activity, activityType: 'REACTION' as const }} />
+
           </Link>
         </m.div>
       );

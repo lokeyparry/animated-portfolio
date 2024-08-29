@@ -80,7 +80,7 @@ function TableOfContents({ items = [] }: TableOfContensProps) {
             href="#skip-navigation"
             className={clsx(
               'border-divider-light text-accent-700 flex h-6 cursor-pointer items-center rounded-full border px-2 text-xs font-normal',
-              'dark:border-divider-light dark:text-accent-400 dark:text-slate-300'
+              'dark:border-divider-light  dark:text-slate-300'
             )}
             tabIndex={isScrolled ? 0 : -1}
             onClick={handleScrollToTopClick}
