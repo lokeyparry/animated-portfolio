@@ -25,7 +25,7 @@ const Content = ({ }) => {
     return (
         <section className='mt-20'>
             <Container>
-                <div className='grid grid-cols-1 grid-cols-3 relative'>
+                <div className='grid grid-cols-1 md:grid-cols-3 relative'>
 
                     <div className={clsx('col-span-3 lg:col-span-2  lg:border-l border-l-slate-300 h-full text-slate-600 lg:px-20 flex flex-col gap-16', 'dark:border-l-slate-600 dark:text-slate-400')}>
                         <div className={clsx('flex flex-col gap-4 text-md  font-thin', 'lg:text-lg')}>
@@ -35,8 +35,8 @@ const Content = ({ }) => {
 
                         <div id='contact' className='flex flex-col gap-8'>
                             <h1 className={clsx('font-bold text-2xl', 'lg:text-3xl')}>Contact</h1>
-                            <table className="w-full text-sm text-left border  text-gray-500 dark:text-gray-400 dark:text-gray-400 dark:border-slate-700">
-                                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 dark:bg-gray-700 dark:text-gray-400 dark:bg-transparent">
+                            <table className="w-full text-sm text-left border  text-gray-500 dark:text-gray-400  dark:border-slate-700">
+                                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700  dark:text-gray-400 dark:bg-transparent">
                                     <tr>
                                         <th scope="col" className="px-6 py-3">
                                             Contact
@@ -137,7 +137,7 @@ const Content = ({ }) => {
                         </div>
                     </div>
 
-                    <div className={clsx('hidden ms-auto lg:flex h-fit gap-8', isScrolled && 'absolute sticky top-0 backdrop-blur shadow-sm dark:shadow-slate-500 ')}>
+                    <div className={clsx('hidden ms-auto lg:flex h-fit gap-8', isScrolled && ' sticky top-0 backdrop-blur shadow-sm dark:shadow-slate-500 ')}>
                         <TableOfContents items={items} />
                     </div>
 
@@ -145,6 +145,7 @@ const Content = ({ }) => {
             </Container>
         </section>
     )
+
 }
 
 export default Content
