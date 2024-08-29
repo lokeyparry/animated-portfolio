@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 
-import { ErrorIcon, InfoIcon, NoteIcon, WarningIcon } from '@/components/Icons';
+// import { ErrorIcon, InfoIcon, NoteIcon, WarningIcon } from '@/components/Icons';
 
 import type { PropsWithChildren, ReactElement } from 'react';
+import { ErrorIcon, InfoIcon, NoteIcon, WarningIcon } from './icons';
 
 interface CalloutProps {
   variant?: 'neutral' | 'info' | 'warning' | 'danger';
@@ -51,10 +52,9 @@ function Callout({
   }
 
   return (
-    <div className={clsx('mdx-callout', data.modifier)}>
+    <div className={clsx('mdx-callout', )}>
       <div className={clsx('mdx-callout__header')}>
-        {data.icon}
-        {data.title}
+        
       </div>
       <div className={clsx('mdx-callout__content')}>{children}</div>
     </div>
