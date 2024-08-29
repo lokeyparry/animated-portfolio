@@ -83,8 +83,8 @@ const Content = ({ }) => {
 
                         <div id="social-media" className='flex flex-col gap-8'>
                             <h1 className={clsx('font-bold text-2xl capitalize', 'lg:text-3xl')}>Social media</h1>
-                            <p>If you want to find me on social media, just search for <strong>@parvejansari</strong> That's my username on almost all platforms, so it should be easy to find me.</p>
-                            <p>But if you're short on time, I've included some links to the social media platforms I use most frequently below.</p>
+                            <p>If you want to find me on social media, just search for <strong>@parvejansari</strong> That is my username on almost all platforms, so it should be easy to find me.</p>
+                            <p>But if you are short on time, I have included some links to the social media platforms I use most frequently below.</p>
 
                             <table className="w-full text-sm text-left border text-gray-500 dark:text-gray-400 dark:border-slate-700 max-w-xs">
                                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 dark:bg-transparent">

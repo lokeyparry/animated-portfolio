@@ -27,17 +27,23 @@ function BlogContents({ posts }: BlogContentsProps) {
     const postsPreview: Array<TPostPreview> = [];
 
     posts?.forEach(({ slug, frontMatter }) => {
-        
-        const { shares, views } = slugsBlog[slug]
-            ? slugsBlog[slug].meta
-            : { shares: 0, views: 0 };
+        const obj = {
+            "the-2023-retrospective": { meta: { views: 100, shares: 10 } },
+            "id-tailwindcss-best-practices": { meta: { views: 200, shares: 20 } },
+          };
+          
+          const key = "the-2023-retrospective"; // Type is implicitly "the-2023-retrospective" | "id-tailwindcss-best-practices"
+          const meta = obj[key].meta;
+          
 
         const preview: TPostPreview = {
             slug,
-            views,
-            shares,
-            ...frontMatter,
+            views: meta.views,
+            shares: meta.shares,
+           ...frontMatter,
         };
+            
+        
 
         if (frontMatter.pinned === true) {
             pinnedPost = preview;
