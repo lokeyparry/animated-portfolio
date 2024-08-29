@@ -39,7 +39,7 @@
         "react-scroll": "^1.9.0",
         "react-spinners": "^0.13.8",
         "remark-gfm": "^4.0.0",
-        "slug": "^9.0.0",
+        "slug": "^9.1.0",
         "swr": "^2.2.5",
         "tailwind-merge": "^2.3.0",
         "tailwindcss-accent": "^2.1.2",

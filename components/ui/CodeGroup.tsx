@@ -6,7 +6,10 @@ import { Children } from 'react';
 
 import { Pre } from '@/components/ui/Pre';
 
+// <<<<<<< Tabnine <<<<<<<
 import { formatLang } from '@/helpers/mdx';
+// import { formatLang } from './helpers/mdx'; // Assuming the file is in the same directory//+
+// >>>>>>> Tabnine >>>>>>>
 
 import type { PreProps } from '@/components/ui/Pre';
 import type { PropsWithChildren, ReactElement } from 'react';
